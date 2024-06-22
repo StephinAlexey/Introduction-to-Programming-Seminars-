@@ -1,0 +1,84 @@
+# Учетные данные пользователя
+.vscode/
+.vscode/*
+
+# Папки проекта
+bin/
+obj/
+Debug/
+Release/
+
+# Файлы журнала
+*.log
+
+# Системные файлы
+*.DS_Store
+Thumbs.db
+
+# Настройки IDE
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Пакеты NuGet
+*.nupkg
+*.snupkg
+packages/
+NuGet.Config
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Папки .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Файлы спецификаций динамической связи и реализации
+*.dll
+*.exe
+*.so
+*.dylib
+*.sql
+*.pdb
+
+# Пакеты тестирования
+TestResults/
+*.TestResults/
+*.VS/
+*.vscode/
+*.VisualStudio/
+*.NuGet/
+*.AppData/
+*.vs/
+
+# Конфигурационные файлы
+*.userprefs
+*.runsettings
+*.testsettings
+*.testconfig
+*.vsmdi
+*.coverage
+*.coveragexml
+*.pri
+*.pgres
+
+# Промежуточные файлы
+*.csproj.user
+*.csproj.core.user
+*.csproj.bak
+*.csproj.FileListAbsolute.txt
+*.csproj.FileList.txt
+*.csproj.FileListRelative.txt
+
+# Файлы MacOS
+*.DS_Store
+
+# Скрытые папки
+.idea/
+.vscode/
+
+.fake
