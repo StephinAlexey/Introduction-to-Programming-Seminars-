@@ -3,6 +3,8 @@
 .vscode/*
 
 # Папки проекта
+bin/*
+obj/*
 bin/
 obj/
 Debug/
