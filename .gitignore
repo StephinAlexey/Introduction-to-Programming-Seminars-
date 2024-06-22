@@ -3,12 +3,12 @@
 .vscode/*
 
 # Папки проекта
-bin/*
-obj/*
-bin/
-obj/
-Debug/
-Release/
+*/bin/*
+*/obj/*
+*/bin/
+*/obj/
+*/Debug/
+*/Release/
 
 # Файлы журнала
 *.log
@@ -75,6 +75,7 @@ TestResults/
 *.csproj.FileListAbsolute.txt
 *.csproj.FileList.txt
 *.csproj.FileListRelative.txt
+*.csproj
 
 # Файлы MacOS
 *.DS_Store
