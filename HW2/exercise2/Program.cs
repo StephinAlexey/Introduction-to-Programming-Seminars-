@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y),
+// причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
+using System;
 
 class Program
 {
@@ -6,26 +8,39 @@ class Program
     {
         Point InsertPoint()
         {
-            bool flag = false;
             Point num = new();
-            while (!flag)
+            while (true)
             {
                 try
                 {
-                    Console.WriteLine("Please enter coordinate X: ");
+                    while (true)
+                    {
+                        Console.WriteLine("Please enter coordinate X: ");
+                        num.X = Convert.ToInt32(Console.ReadLine());
+                        if(num.X==0)
+                        Console.WriteLine("This number cannot be zero");
+                        else
+                        break;
+                      
+                    }
+                    while (true)
+                    {
+                        Console.WriteLine("Please enter coordinate Y: ");
+                        num.Y = Convert.ToInt32(Console.ReadLine());
+                        if(num.Y==0)
+                        Console.WriteLine("This number cannot be zero");
+                        else
+                        break;
+                    }
+                    return num;
 
-
-                    num.X = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Please enter coordinate Y: ");
-                    num.Y = Convert.ToInt32(Console.ReadLine());
-                    flag = true;
                 }
                 catch (FormatException)
                 {
                     System.Console.WriteLine("Not correctly input, must by number only");
                 }
             }
-            return num;
+
         }
 
         int CoordinateQuarter(Point points)
