@@ -13,5 +13,6 @@ class Program
     {
         Colors BlackWhite = Colors.Black | Colors.White;
         Console.WriteLine(BlackWhite);
+    
     }
 }
